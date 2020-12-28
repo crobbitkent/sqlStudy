@@ -1,0 +1,4 @@
+-- .을 쓰다보면 쿼리가 길어지기 때문에 ALIAS를 써주면 좋다.
+SELECT A.EMP_ID, A.DEPT_CODE, B.DEPT_NAME
+    FROM TEMP A, TDEPT B
+    WHERE A.DEPT_CODE = B.DEPT_CODE;

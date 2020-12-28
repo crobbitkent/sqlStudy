@@ -1,0 +1,4 @@
+-- NULL 비교하기 (취미란이 비어있는 사람의 이름 조회)
+SELECT EMP_NAME
+FROM TEMP
+WHERE HOBBY IS NOT NULL;

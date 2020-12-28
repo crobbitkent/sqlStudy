@@ -1,0 +1,2 @@
+--CONCATENATION
+SELECT EMP_NAME || '(' || LEV || ')' AS ΌΊΈν FROM TEMP;

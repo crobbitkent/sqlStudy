@@ -1,0 +1,4 @@
+--ALIAS·Î º°¸í Áþ±â
+SELECT EMP_ID SABUN,
+    EMP_NAME AS NAME
+    FROM TEMP;
