@@ -1,0 +1,5 @@
+--SUBSTR
+--EMP_ID가 첫번째부터 네번째의 값을 불러오고 +1한 값이 1998과 같으면 조회
+SELECT EMP_ID, EMP_NAME
+FROM TEMP
+WHERE SUBSTR(EMP_ID,1,4) + 1 = 1998;
