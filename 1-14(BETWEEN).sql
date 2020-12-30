@@ -1,0 +1,3 @@
+SELECT EMP_ID, EMP_NAME
+FROM TEMP
+WHERE EMP_NAME IN ('È«±æµ¿', '±è±æµ¿');
