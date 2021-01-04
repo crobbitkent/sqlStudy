@@ -1,0 +1,3 @@
+SELECT SUBSTRB('ABC좋은나라DEF웃긴나라', 4, 12)  
+
+FROM DUAL

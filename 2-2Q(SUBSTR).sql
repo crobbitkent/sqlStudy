@@ -1,0 +1,3 @@
+SELECT SUBSTR('ABC좋은나라DEF웃긴나라', 4, 4)
+
+FROM DUAL;

@@ -1,0 +1,3 @@
+SELECT LENGTHB('ABC좋은나라DEF웃긴나라')
+
+FROM DUAL;

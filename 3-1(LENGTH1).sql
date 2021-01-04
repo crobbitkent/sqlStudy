@@ -1,0 +1,5 @@
+SELECT (LENGTHB('ABC좋은나라DEF웃긴나라')
+
+-LENGTH('ABC좋은나라DEF웃긴나라')) / 2
+
+FROM DUAL;
