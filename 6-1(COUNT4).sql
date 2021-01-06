@@ -1,0 +1,5 @@
+SELECT COUNT(*)
+
+FROM TEMP
+
+WHERE HOBBY = '°øºÎ';

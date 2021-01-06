@@ -1,3 +1,3 @@
-SELECT SUBSTRB('ABC좋은나라DEF웃긴나라', 2, 10)
+SELECT SUBSTRB('ABC좋은나라DEF웃긴나라', 0, 3)
 
 FROM DUAL;
