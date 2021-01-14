@@ -1,0 +1,4 @@
+SELECT a.first_name || ' ' || a.last_name NAME, A.EMPLOYEE_ID, B.DEPARTMENT_NAME
+FROM EMPLOYEES A, DEPARTMENTS B
+WHERE A.DEPARTMENT_ID = b.department_id
+
