@@ -1,3 +1,8 @@
+create user mingyu identified by alsrb;
+grant  connect, dba to mingyu;
+
+
+
 
 create sequence seq_store;
 -- 생성 완료
