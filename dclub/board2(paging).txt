@@ -20,6 +20,16 @@ select * from
 where rn > 10 * (4 - 1);
 
 
+-- paging 2.5
+select /*+INDEX_DESC(tbl_store pk_store)*/
+* from
+( select rownum rn, sno, name, menu, count(sno) over()
+    from tbl_store
+    where rownum <= 101
+    )
+where rn > 10 and rn <= 20;
+
+
 -- paging 3
 -- selecting the 10th page of length 100 each
 SELECT /*+ordered use_nl(p s)*/ * FROM
