@@ -3,7 +3,7 @@ grant  connect, dba to mingyu;
 
 
 
-
+-------------------------스토어 테이블 만들기--------------------------------
 create sequence seq_store;
 -- 생성 완료
 
@@ -33,6 +33,21 @@ select * from tbl_store;
 delete from tbl_store  where sno > 4;
 -- 생성 완료
 
+-------------------------회원 테이블 만들기--------------------------------
+create table tbl_member(
+  mid varchar2(100) not null ,
+  mpw varchar2(100) not null ,
+  mname varchar2(50) not null ,
+  regdate date default sysdate,
+  updatedate date default sysdate
+);
+--사용자가 직접 지정해야하는 것은 시퀀스를 사용하지 않는다.
+
+alter table tbl_member add constraint pk_member primary key (mid);
+
+
+
+
 -------------------------리뷰 테이블 만들기--------------------------------
 update tbl_store set menu = '시노기 라멘' where sno = 1;
 -- 생성 완료
@@ -57,3 +72,5 @@ ALTER TABLE TBL_REVIEW ADD CONSTRAINT FK_REVIEW_MEMBER FOREIGN KEY (MID) REFEREN
 ALTER TABLE TBL_REVIEW ADD CONSTRAINT FK_REVIEW_STORE FOREIGN KEY (SNO) REFERENCES TBL_STORE(SNO);
 
 
+select * from (select sno from TBL_STORE where sno = ?) store, (select * from TBL_REVIEW where sno = ?) review
+		
